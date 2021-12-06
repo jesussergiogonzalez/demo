@@ -18,13 +18,25 @@ import com.example.demo.products.Productos;
 
 
 @RestController
-@RequestMapping("productos")
+@RequestMapping("/")
 public class ProductsRest {
 
 	@Autowired
 	private ProductosDAO productosDao ;
-		
+	
 	@GetMapping
+	public String Hello() {
+		var Mensaje="";
+	
+		Mensaje =  "<br>" + "<br>"
+				+ "Este es un ejemplo de uso de las aplicaciones API-REST " + "<br>" + "<br>" + "<br>"
+				+ "Para acceder a la lista de productos usar esta liga: " + "<a href=\"http://localhost:8080/productos\">Listado de Productos</a>"
+				+ "";
+		
+		return Mensaje;		
+	}
+	
+	@GetMapping("productos")
 	public ResponseEntity<List<Productos>> GetProductos()
 	{
 		List<Productos> Prod = productosDao.findAll();
