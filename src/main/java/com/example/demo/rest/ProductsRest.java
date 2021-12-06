@@ -23,9 +23,7 @@ public class ProductsRest {
 
 	@Autowired
 	private ProductosDAO productosDao ;
-	
-	
-	
+		
 	@GetMapping
 	public ResponseEntity<List<Productos>> GetProductos()
 	{
