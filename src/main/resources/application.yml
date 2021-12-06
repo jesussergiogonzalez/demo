@@ -6,11 +6,12 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
 <<<<<<< HEAD
-  datasource:    driver-class-name: com.mysql.cj.jdbc.Driver
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
 =======
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
 >>>>>>> ecb065e1f68349059f60dc0fcdb8d47bff2cc17c
-    url: jdbc:mysql://172.21.103.235:3306/productos?zeroDateTimeBehaivor=convertToNull&serverTimeZone=UTC
+    url: jdbc:mysql://172.21.194.248:3306/productos?zeroDateTimeBehaivor=convertToNull&serverTimeZone=UTC
     username: root
     password: 12345
