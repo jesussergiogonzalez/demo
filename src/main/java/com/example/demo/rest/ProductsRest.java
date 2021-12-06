@@ -30,7 +30,7 @@ public class ProductsRest {
 	
 		Mensaje =  "<br>" + "<br>"
 				+ "Este es un ejemplo de uso de las aplicaciones API-REST " + "<br>" + "<br>" + "<br>"
-				+ "Para acceder a la lista de productos usar esta liga: " + "<a href=\"http://localhost:8080/productos\">Listado de Productos</a>"
+				+ "Para acceder a la lista de productos usar esta liga: " + "<a href=\"http://http://demo5-dmoproductos.cloudapps-c80c85e61c43c6ae2fc6433a3a8c596f-0000.mex01.containers.appdomain.cloud/productos\">Listado de Productos</a>"
 				+ "";
 		
 		return Mensaje;		
